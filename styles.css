@@ -1,0 +1,73 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+    overflow: hidden; /* Prevents content from exceeding viewport height */
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    max-width: 90vw; /* Ensures button does not exceed viewport width */
+}
+
+/* Cards container styling */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    max-width: 90vw; /* Ensures container does not exceed viewport width */
+}
+
+/* Individual card styling */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 40vh; /* Ensures card images do not exceed viewport height */
+}
+
+/* Result styling */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 90vw; /* Ensures result text does not exceed viewport width */
+}
+
+/* Responsive styling */
+@media (max-width: 300px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
